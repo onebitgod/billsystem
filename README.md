@@ -1,4 +1,5 @@
-# Billing System (CLI) in Go
+# Billing System (CLI) in Go 
+### For anyone Starting with Go
 
 A simple **command-line billing system** written entirely in **Go** with **no external packages** — built using only core language features like functions, conditionals, loops, and basic I/O.
 
@@ -6,9 +7,8 @@ A simple **command-line billing system** written entirely in **Go** with **no ex
 
 ## 🚀 Features
 
-- Add products with price and quantity
+- Add items with price and quantity to bill
 - Calculate total bill
-- Apply basic discounts or taxes (optional logic)
 - Display detailed bill summary
 - CLI-based user interaction
 
@@ -25,18 +25,61 @@ A simple **command-line billing system** written entirely in **Go** with **no ex
 
 The program runs in your terminal and allows you to:
 
-1. Enter product details (name, price, quantity)
-2. View the calculated total bill
-3. Optionally apply discounts/taxes using built-in logic
-4. Print the final invoice
+1. Create Items (name, price)
+2. Create Bill (items, tip, items quantity)
+3. View, Edit and Delete Items
+4. View, Edit and Delete Bills
 
 ---
 
 ## 📦 Getting Started
 
-### 1. Clone the repo
+### Clone the repo and run
 
 ```bash
 git clone https://github.com/yourusername/billsystem.git
 cd billsystem
 go run main.go
+```
+
+```bash
+---------- Main Menu ----------
+
+| b: Bills Menu | i: Items Menu | q: Exit |
+
+Choose your option : 
+```
+
+### 1. Bills Menu 
+b: Bills Menu
+
+```bash
+---------- Bill Menu ----------
+
+| v: View Bills | n: New Bill | m: Main Menu |
+```
+
+v: View Bills
+
+```bash
+----------------------------------- Bills List ---------------------------------------
+-------------------------------------------------------------------------------------
+| S.No  | Customer Name  | BillID | Total items | CreatedAt          | Total Amount |
+-------------------------------------------------------------------------------------
+| 1     | OneBitGod       | 1      | 2           | 14 May 2025, 11:59 | ₹650         |
+-------------------------------------------------------------------------------------
+|                                                                    Total Bills: 1 |
+-------------------------------------------------------------------------------------
+
+
+Choose Below option or Enter Bill Id to proceed
+
+| d: Delete Bill | b: Bill Menu | m: Main Menu | q: exit |
+
+Choose your option : 
+```
+
+## CODE LIKE GOD
+🤝 Contribute, Code, Learn
+
+
